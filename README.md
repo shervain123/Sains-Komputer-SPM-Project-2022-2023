@@ -33,8 +33,14 @@ Use this as a base/reference for your SPM project
 
 Go back to localhost and login and you should see one test product if you have setup correctly
 
+
+### TODO
+
+ - [x] Sample code
+ - [ ] Laporan 
+
 ## Goodluck on your SPM
 
-made by a 2022-2023 student
+made by a 2022-2023 SPM student
 
 
