@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div id="header">
+        <h1>Your Shop name here</h1>
+        <button class="search login" onclick="redirect('index.html')">Menu utama</button>
+        <div class="font_size">
+            <button onclick="zoomIn()" class="search">+</button>
+            <button onclick="zoomOut()" class="search">-</button>
+        </div>
+    </div>
+    <div id="center_login">
+        <div id="login">
+            <h3>Login</h3>
+            <div class="info_div">
+                <input class="search" placeholder="Id pengguna" id="nama_login" maxlength="15">
+                <div class="text_info hiding" id="loginn">
+                    <p id="loginn_text"></p>
+                </div>
+            </div>
+            <div class="info_div">
+                <input class="search" placeholder="Kata laluan" type="password" id="password_login" maxlength="15">
+                <a class="search material-icons-outlined hidebtn" title="Show password" href="javascript:unhide('password_login','0')">visibility</a>
+                <div class="text_info hiding" id="loginp">
+                    <p id="loginp_text"></p>
+                </div>
+            </div>
+            <button id="login_button" class="search log_button" onclick="login()">Login</button>
+        </div>
+        <div id="signup">
+            <h3>Daftar</h3>
+
+            <div class="info_div">
+                <input class="search" placeholder="Id pengguna" id="id_signup" maxlength="15">
+                <div class="text_info hiding" id="signupi">
+                    <p id="signupi_text"></p>
+                </div>
+            </div>
+
+            <div class="info_div">
+                <input class="search" placeholder="Nama" id="nama_signup" maxlength="15">
+                <div class="text_info hiding" id="signupn">
+                    <p id="signupn_text"></p>
+                </div>
+            </div>
+
+            <div class="info_div">
+                <input class="search" placeholder="Kata Laluan" type="password" id="password_signup"  maxlength="15">
+                <a class="search material-icons-outlined hidebtn" title="Show password" href="javascript:unhide('password_signup','1')">visibility</a>
+                <div class="text_info hiding" id="signupp">
+                    <p id="signupp_text"></p>
+                </div>
+            </div>
+
+            <div class="info_div">
+                <input class="search" placeholder="Emel"  id="emel_signup">
+                <div class="text_info hiding" id="signupe">
+                    <p id="signupe_text"></p>
+                </div>
+            </div>
+
+            <div class="info_div">
+                <input class="search" placeholder="Nombor Telefon" id="telefon_signup" maxlength="10">
+                <div class="text_info hiding" id="signupt">
+                    <p id="signupt_text"></p>
+                </div>
+            </div>
+
+            <button class="search log_button" id="button_signup" onclick="signup()">Daftar</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script src="/js/login.js"></script>

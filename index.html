@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Shop name here</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div id="header">
+        <!--header-->
+        <h1>Your Shop name here</h1>
+        <button class="search login" id="login_btn" onclick="redirect('login.html')">Login</button>
+        <div class="font_size">
+            <button onclick="zoomIn()" class="search">+</button>
+            <button onclick="zoomOut()" class="search">-</button>
+            <button onclick="print_page()" class="search">Cetak</button>
+        </div>
+    </div>
+    <div id="side_bar">
+        <!--menu utama-->
+        <input placeholder="Cari" class="search" id="search" onkeyup="search('search','produk')">
+        <p>Harga</p>
+        <input type="radio" id="lds" name="harga" value="1">
+        <label for="lds">>=RM10</label><br>
+        <input type="radio" id="kds" name="harga" checked value="2">
+        <label for="kds"><=RM10</label>
+
+        <p>Kalori</p>
+        <input type="radio" id="lde" name="kalori" value="1">
+        <label for="lde">>=100</label><br>
+        <input type="radio" id="kde" name="kalori" checked value="2">
+        <label for="kde"><=100</label><br>
+
+        <p>Daging</p>
+        <div id="daging">
+            <input type="radio" id="ikan" name="daging" value="ikan">
+            <label for="ikan">Ikan</label><br>
+            <input type="radio" id="udang" name="daging" value="udang">
+            <label for="udang">Udang</label><br>
+            <input type="radio" id="ayam" name="daging" value="ayam">
+            <label for="ayam">Ayam</label><br>
+            <input type="radio" id="tiada" name="daging" checked value="tiada">
+            <label for="tiada">Tiada</label><br>
+        </div>
+        
+        <button class="search side_bButon" onclick="filter_produk()">Semak</button>
+        <button class="search side_bButon" onclick="show_all()">Semua Produk</button>
+    </div>
+    <div id="main">
+        <!--senarai produk-->
+        <p id="login_message">Sila login dahulu</p>
+        <p id="produk_dipilih" class="hidea">Sila pilih produk</p>
+        <div id="produk">
+
+
+        </div>
+    </div>
+    <div class="hidea">
+        <!--file upload-->
+        <form action="/php/file_upload.php" method="post" enctype="multipart/form-data" target="uploader">
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <input type="submit" value="Upload" id="upload_file" name="submit">
+        </form>
+        <iframe name="uploader" id="file_names"></iframe>
+    </div>
+</body>
+
+</html>
+
+
+
+<script src="/js/index.js"></script>
