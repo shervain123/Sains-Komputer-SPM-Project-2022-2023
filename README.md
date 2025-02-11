@@ -9,7 +9,6 @@ This project is made for my school laptop resolution (1366x649) edit the css fil
 
 ## This repo includes
  - Sample code
- - Sample report
 
 ## This is NOT going to be the SAME as your question 
 Use this as a base/reference for your SPM project 
